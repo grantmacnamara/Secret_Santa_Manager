@@ -1,0 +1,256 @@
+.dashboard-container {
+  padding: 1rem;
+  max-width: 600px;
+  margin: 0 auto;
+  padding-top: 2rem;
+}
+
+.dashboard-header {
+  display: flex;
+  align-items: center;
+  justify-content: space-between;
+  margin-bottom: 2rem;
+  flex-wrap: wrap;
+  gap: 1rem;
+}
+
+.dashboard-title {
+  font-family: 'Mountains of Christmas', cursive;
+  color: var(--christmas-red);
+  font-size: 2rem;
+  margin: 0;
+  text-shadow: 2px 2px 4px rgba(0, 0, 0, 0.2);
+}
+
+.status-badge {
+  padding: 0.5rem 1.2rem;
+  border-radius: 20px;
+  font-size: 0.9rem;
+  font-weight: bold;
+  box-shadow: 0 2px 4px rgba(0, 0, 0, 0.1);
+}
+
+.status-badge.ready {
+  background-color: var(--christmas-green);
+  color: var(--snow-white);
+}
+
+.status-badge.pending {
+  background-color: var(--christmas-red);
+  color: var(--snow-white);
+}
+
+.card {
+  background: var(--snow-white);
+  border-radius: 12px;
+  padding: 1.5rem;
+  margin-bottom: 1.5rem;
+  box-shadow: 0 4px 6px rgba(0, 0, 0, 0.1);
+  box-sizing: border-box;
+}
+
+/* How it works section */
+.welcome-steps {
+  margin: 0 0 2.5rem 0;
+  padding: 1rem;
+  background-color: rgba(22, 91, 51, 0.05);
+  border-radius: 8px;
+  box-sizing: border-box;
+}
+
+.welcome-steps h2 {
+  color: var(--christmas-green);
+  font-size: 1.4rem;
+  margin-top: 0;
+  margin-bottom: 1rem;
+}
+
+.steps-list {
+  padding-left: 1.2rem;
+  margin: 0;
+}
+
+.steps-list li {
+  margin-bottom: 0.6rem;
+  line-height: 1.3;
+  color: #444;
+}
+
+/* Preferences section */
+.preferences-section {
+  margin-top: 3rem;
+  padding-top: 2rem;
+  border-top: 2px solid rgba(22, 91, 51, 0.1);
+  width: 100%;
+  box-sizing: border-box;
+}
+
+.preferences-section h3 {
+  color: var(--christmas-green);
+  font-size: 1.3rem;
+  margin-bottom: 2.5rem;
+  margin-top: 8rem;
+}
+
+.preferences-section h3:first-child {
+  margin-top: 0;
+}
+
+.preferences-section .dislikes-section {
+  margin-top: 8rem;
+  padding-top: 2rem;
+  border-top: 2px solid rgba(22, 91, 51, 0.1);
+}
+
+.form-group {
+  margin-bottom: 1.5rem;
+  padding: 0;
+  width: 100%;
+  box-sizing: border-box;
+}
+
+.form-group label {
+  display: block;
+  margin-bottom: 0.5rem;
+  color: #444;
+  font-weight: 500;
+}
+
+.form-group input {
+  width: 100%;
+  padding: 0.8rem;
+  border: 2px solid #e0e0e0;
+  border-radius: 6px;
+  font-size: 1rem;
+  transition: border-color 0.3s ease;
+  box-sizing: border-box;
+  margin: 0;
+}
+
+.form-group input:focus {
+  border-color: var(--christmas-green);
+  outline: none;
+}
+
+.price-range-info {
+  background-color: rgba(22, 91, 51, 0.05);
+  padding: 0.8rem;
+  border-radius: 8px;
+  margin: 0 auto 1.5rem auto;
+  text-align: center;
+  max-width: 80%;
+}
+
+.price-range-display {
+  color: var(--christmas-green);
+  font-size: 1.1rem;
+  font-weight: bold;
+  margin: 0.3rem 0 0 0;
+}
+
+.logout-form {
+  margin-top: 3rem;
+  text-align: center;
+  padding-top: 1.5rem;
+  border-top: 2px solid rgba(22, 91, 51, 0.1);
+}
+
+.btn-secondary {
+  background-color: #6c757d;
+  color: white;
+  padding: 0.8rem 2rem;
+  border-radius: 6px;
+  transition: all 0.3s ease;
+}
+
+.btn-secondary:hover {
+  background-color: #5a6268;
+  transform: translateY(-1px);
+}
+
+.btn-primary {
+  background-color: var(--christmas-green);
+  color: white;
+  padding: 0.8rem 2rem;
+  border-radius: 6px;
+  transition: all 0.3s ease;
+}
+
+.btn-primary:hover {
+  background-color: #124a2a;
+  transform: translateY(-1px);
+}
+
+/* Mobile-first styles */
+@media (max-width: 480px) {
+  .dashboard-container {
+    padding: 1rem;
+  }
+
+  .dashboard-title {
+    font-size: 1.8rem;
+  }
+
+  .card {
+    padding: 1.5rem;
+  }
+}
+
+/* Larger screens */
+@media (min-width: 481px) {
+  .dashboard-container {
+    padding: 2rem;
+  }
+}
+
+/* Specifically target the gift preference inputs */
+.preferences-section input[type="text"] {
+  width: 100%;
+  box-sizing: border-box;
+  padding: 0.8rem;
+  border: 2px solid #e0e0e0;
+  border-radius: 6px;
+  font-size: 1rem;
+  margin: 0;
+}
+
+/* Target the container of each preference input */
+.preference-item {
+  width: 100%;
+  box-sizing: border-box;
+  padding: 0;
+  margin-bottom: 3rem;
+}
+
+.preference-item:last-of-type {
+  margin-bottom: 4rem;
+}
+
+/* Target the specific input fields for likes and dislikes */
+.gift-preferences input[type="text"] {
+  width: 100%;
+  box-sizing: border-box;
+  padding: 0.8rem;
+  border: 2px solid #e0e0e0;
+  border-radius: 6px;
+  font-size: 1rem;
+  margin-bottom: 2rem;
+}
+
+/* Last input in each section doesn't need the large bottom margin */
+.gift-preferences input[type="text"]:last-of-type {
+  margin-bottom: 1.5rem;
+}
+
+/* Add space between the likes and dislikes sections */
+.gift-preferences .dislikes {
+  margin-top: 3rem;
+}
+
+/* If there's a heading above the price range */
+.price-range-info h3 {
+  margin-top: 0;
+  margin-bottom: 0.5rem;
+  font-size: 1.2rem;
+  text-align: center;
+}

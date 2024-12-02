@@ -1,0 +1,134 @@
+:root {
+  --christmas-red: #D42426;
+  --christmas-green: #165B33;
+  --dark-green: #0B3B24;
+  --snow-white: #FFFFFF;
+  --holly-berry: #BB2528;
+  --pine-green: #1a472a;
+  --gold: #FFD700;
+  --silver: #C0C0C0;
+  --base-spacing: 1rem;
+  font-size: 16px;
+}
+
+body {
+  font-family: 'Arial', sans-serif;
+  margin: 0;
+  padding: 1.25rem;
+  background-color: var(--dark-green);
+  min-height: 100vh;
+  overflow-y: auto;
+}
+
+.container {
+  max-width: 100%;
+  margin: 0 auto;
+  padding: 1.25rem;
+}
+
+.card {
+  background: var(--snow-white);
+  border-radius: 12px;
+  box-shadow: 0 4px 6px rgba(0, 0, 0, 0.1);
+  padding: 1.5rem;
+  margin-bottom: 1.5rem;
+  max-width: 800px;
+  margin-left: auto;
+  margin-right: auto;
+}
+
+h1, h2, h3, h4 {
+  color: var(--christmas-green);
+  margin-top: 0;
+}
+
+.form-group {
+  margin-bottom: 1rem;
+  max-width: 400px;
+}
+
+label {
+  display: block;
+  margin-bottom: 0.5rem;
+  color: var(--pine-green);
+}
+
+input, textarea {
+  width: 100%;
+  max-width: 400px;
+  padding: 0.8rem;
+  border: 2px solid #ddd;
+  border-radius: 6px;
+  font-size: 1rem;
+  transition: border-color 0.3s ease;
+}
+
+input:focus, textarea:focus {
+  border-color: var(--christmas-green);
+  outline: none;
+}
+
+textarea {
+  min-height: 100px;
+  resize: vertical;
+}
+
+.btn {
+  display: inline-block;
+  padding: 0.8rem 1.5rem;
+  background-color: var(--christmas-red);
+  color: var(--snow-white);
+  border: none;
+  border-radius: 6px;
+  font-weight: bold;
+  cursor: pointer;
+  transition: all 0.3s ease;
+}
+
+.btn:hover {
+  transform: translateY(-2px);
+  box-shadow: 0 2px 4px rgba(0, 0, 0, 0.2);
+}
+
+.btn:disabled {
+  opacity: 0.6;
+  cursor: not-allowed;
+  background-color: #ccc;
+  border-color: #ccc;
+}
+
+.snowflake {
+  position: absolute;
+  top: -10px;
+  width: 10px;
+  height: 10px;
+  background: var(--snow-white);
+  border-radius: 50%;
+  opacity: 0.8;
+  animation: fall linear infinite;
+}
+
+@keyframes fall {
+  0% {
+    transform: translateY(0);
+    opacity: 0.8;
+  }
+  100% {
+    transform: translateY(100vh);
+    opacity: 0;
+  }
+}
+
+@media (min-width: 768px) {
+  .container {
+    max-width: 1000px;
+    padding: 2rem;
+  }
+
+  .dashboard-stats {
+    display: grid;
+    grid-template-columns: repeat(auto-fit, minmax(200px, 1fr));
+    gap: 1rem;
+    margin-bottom: 2rem;
+  }
+}

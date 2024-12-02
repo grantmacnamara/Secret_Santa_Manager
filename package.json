@@ -1,0 +1,26 @@
+{
+  "name": "secret-santa-hono",
+  "version": "1.0.0",
+  "type": "module",
+  "scripts": {
+    "dev": "set NODE_ENV=development&& vite",
+    "build": "vite build",
+    "start": "node dist/entry.js",
+    "serve": "vite preview"
+  },
+  "keywords": [],
+  "author": "",
+  "license": "ISC",
+  "description": "",
+  "dependencies": {
+    "@hono/node-server": "^1.3.0",
+    "bcryptjs": "^2.4.3",
+    "dotenv": "^16.4.5",
+    "hono": "^4.0.0",
+    "nodemailer": "^6.9.16"
+  },
+  "devDependencies": {
+    "@hono/vite-dev-server": "^0.3.0",
+    "vite": "^5.0.0"
+  }
+}
