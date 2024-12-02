@@ -16,172 +16,191 @@
     },
     {
       "id": 2,
-      "username": "Mum",
-      "email": "47patmac@gmail.com",
-      "clearPassword": "9371",
-      "isAdmin": false,
-      "ready": true,
-      "matchedWith": 5,
-      "giftPreferences": {
-        "likes": [
-          "I’m happy with anything",
-          "I’m still happy with anything"
-        ],
-        "dislikes": [
-          "I’m easily pleased",
-          "Still easily pleased"
-        ]
-      }
-    },
-    {
-      "id": 3,
-      "username": "Lee",
-      "email": "leemacnamara@gmail.com",
-      "clearPassword": "4701",
-      "isAdmin": false,
-      "ready": true,
-      "matchedWith": 6,
-      "giftPreferences": {
-        "likes": [
-          "Quality socks with arch support ",
-          "Whisky"
-        ],
-        "dislikes": [
-          "Nothing ",
-          "Really… Nothing! "
-        ]
-      }
-    },
-    {
-      "id": 4,
-      "username": "Glenn",
-      "email": "glennmacnamara@gmail.com",
-      "clearPassword": "3066",
-      "isAdmin": false,
-      "ready": true,
-      "matchedWith": 3,
-      "giftPreferences": {
-        "likes": [
-          "Jameson Whisky",
-          "Amazon Gift Voucher "
-        ],
-        "dislikes": [
-          "Aftershave",
-          "Clothes "
-        ]
-      }
-    },
-    {
-      "id": 5,
-      "username": "Helen",
-      "email": "helen.allan123@gmail.com",
-      "clearPassword": "6958",
-      "isAdmin": false,
-      "ready": true,
-      "matchedWith": 7,
-      "giftPreferences": {
-        "likes": [
-          "Lego",
-          "Candles"
-        ],
-        "dislikes": [
-          "Gnomes ",
-          "Monkeys "
-        ]
-      }
-    },
-    {
-      "id": 6,
-      "username": "Claire",
-      "email": "cpm132@aol.com",
-      "clearPassword": "4747",
-      "isAdmin": false,
-      "ready": true,
-      "matchedWith": 9,
-      "giftPreferences": {
-        "likes": [
-          "Skincare no7 ",
-          "Voucher from boots/amazon/next?"
-        ],
-        "dislikes": [
-          "Clothes ",
-          "Candles (I do like them I just have plenty!)"
-        ]
-      }
-    },
-    {
-      "id": 7,
       "username": "Angela",
       "email": "angelamacnamara@hotmail.com",
-      "clearPassword": "9521",
-      "isAdmin": false,
-      "ready": true,
-      "matchedWith": 4,
-      "giftPreferences": {
-        "likes": [
-          "Lavender bath oil/lotion/candles/etc",
-          "Gardening, classic Novels, Yoga, running, "
-        ],
-        "dislikes": [
-          "Crime/thriller novels ",
-          "Autobiographies/biographies"
-        ]
-      }
-    },
-    {
-      "id": 8,
-      "username": "Grant",
-      "email": "grantmac@gmail.com",
-      "clearPassword": "1302",
-      "isAdmin": false,
-      "ready": true,
-      "matchedWith": 2,
-      "giftPreferences": {
-        "likes": [
-          "Secret Edinburgh Guide: A guide to the unusual and",
-          "fine tipped writing pen - just for notes"
-        ],
-        "dislikes": [
-          "Clothes",
-          "Donal Trump"
-        ]
-      }
-    },
-    {
-      "id": 9,
-      "username": "Charlie",
-      "email": "macnamara.charlie@gmail.com",
-      "clearPassword": "5274",
+      "clearPassword": "1604",
       "isAdmin": false,
       "ready": true,
       "matchedWith": 10,
       "giftPreferences": {
         "likes": [
-          "Bread baking",
-          "Books"
+          "Floral scented toiletries ",
+          "Novels  "
         ],
         "dislikes": [
-          "Socks",
-          "Tat"
+          "Coconut ",
+          "Pine scented things "
+        ]
+      }
+    },
+    {
+      "id": 3,
+      "username": "Daisy",
+      "email": "daisyrmac@icloud.com",
+      "clearPassword": "1191",
+      "isAdmin": false,
+      "ready": true,
+      "matchedWith": 5,
+      "giftPreferences": {
+        "likes": [
+          "Rings",
+          "Stars and moons"
+        ],
+        "dislikes": [
+          "Coconut",
+          "Books "
+        ]
+      }
+    },
+    {
+      "id": 4,
+      "username": "Sofia",
+      "email": "sofsin@gmail.com",
+      "clearPassword": "4140",
+      "isAdmin": false,
+      "ready": true,
+      "matchedWith": 7,
+      "giftPreferences": {
+        "likes": [
+          "Running ",
+          "Chocolate "
+        ],
+        "dislikes": [
+          "Doing crafty things ",
+          "Video games "
+        ]
+      }
+    },
+    {
+      "id": 5,
+      "username": "Athena",
+      "email": "athena.sintoris@gmail.com",
+      "clearPassword": "5286",
+      "isAdmin": false,
+      "ready": true,
+      "matchedWith": 11,
+      "giftPreferences": {
+        "likes": [
+          "coconut scented things",
+          "brandy melville clothes "
+        ],
+        "dislikes": [
+          "crafts/ activities ",
+          "not sure!"
+        ]
+      }
+    },
+    {
+      "id": 6,
+      "username": "Eleni",
+      "email": "elenisin1059@gmail.com",
+      "clearPassword": "2920",
+      "isAdmin": false,
+      "ready": true,
+      "matchedWith": 2,
+      "giftPreferences": {
+        "likes": [
+          "Art",
+          "Video games"
+        ],
+        "dislikes": [
+          "I’m easy with anything :)",
+          "Not to be unhelpful lol"
+        ]
+      }
+    },
+    {
+      "id": 7,
+      "username": "Jane",
+      "email": "janebeatson@gmail.com",
+      "clearPassword": "4833",
+      "isAdmin": false,
+      "ready": true,
+      "matchedWith": 3,
+      "giftPreferences": {
+        "likes": [
+          "Pretty fairy lights",
+          "Cosy cardigan/jumper"
+        ],
+        "dislikes": [
+          "Cooking things",
+          "Cooking books"
+        ]
+      }
+    },
+    {
+      "id": 8,
+      "username": "Floyd and Zoë",
+      "email": "Floydmacnamara@gmail.com",
+      "clearPassword": "7226",
+      "isAdmin": false,
+      "ready": true,
+      "matchedWith": 9,
+      "giftPreferences": {
+        "likes": [
+          "Vases/ jugs",
+          "Homey things candles or plants etc "
+        ],
+        "dislikes": [
+          "We love mugs,but have no more space for more mugs ",
+          "“Stuff” "
+        ]
+      }
+    },
+    {
+      "id": 9,
+      "username": "Grant",
+      "email": "grantmac@gmail.com",
+      "clearPassword": "9161",
+      "isAdmin": false,
+      "ready": true,
+      "matchedWith": 4,
+      "giftPreferences": {
+        "likes": [
+          "puzzles",
+          "Books on old computers / retro gaming. "
+        ],
+        "dislikes": [
+          "Donald Trump",
+          "War"
         ]
       }
     },
     {
       "id": 10,
-      "username": "Aunty Norma",
-      "email": "nib.macpherson@gmail.com ",
-      "clearPassword": "1865",
+      "username": "Charlie",
+      "email": "macnamara.charlie@gmail.com",
+      "clearPassword": "3114",
       "isAdmin": false,
       "ready": true,
       "matchedWith": 8,
       "giftPreferences": {
         "likes": [
-          "A secret",
-          "Another secret"
+          "books",
+          "baking"
         ],
         "dislikes": [
-          "Scarves",
-          "Lotions"
+          "tat",
+          "socks"
+        ]
+      }
+    },
+    {
+      "id": 11,
+      "username": "Sidney",
+      "email": "sleesthomson@gmail.com",
+      "clearPassword": "2939",
+      "isAdmin": false,
+      "ready": true,
+      "matchedWith": 6,
+      "giftPreferences": {
+        "likes": [
+          "Lego",
+          "Art Utility"
+        ],
+        "dislikes": [
+          "books",
+          "olives"
         ]
       }
     }

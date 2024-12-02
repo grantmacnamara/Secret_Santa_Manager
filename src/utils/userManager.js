@@ -67,6 +67,7 @@ class UserManager {
         likes: [],
         dislikes: [],
         matchedWith: null,
+        familyGroup: 0, // Admin has no family group
         giftPreferences: this.getDefaultPreferences()
       }]
     };
@@ -112,6 +113,7 @@ class UserManager {
       isAdmin,
       ready: false,
       matchedWith: null,
+      familyGroup: 0, // Default family group
       giftPreferences: this.getDefaultPreferences()
     };
     

@@ -121,41 +121,163 @@ app.get('/admin', adminMiddleware, async (c) => {
           .user-row {
             display: flex;
             align-items: center;
+            gap: 1.5rem;
+            margin-bottom: 0.8rem;
+            background: #fff;
+            padding: 1.2rem;
+            border-radius: 12px;
+            box-shadow: 0 2px 8px rgba(0,0,0,0.05);
+            transition: all 0.2s ease;
+          }
+          .user-row:hover {
+            transform: translateY(-2px);
+            box-shadow: 0 4px 12px rgba(0,0,0,0.1);
+          }
+          .user-info {
+            flex: 1;
+            display: flex;
+            align-items: center;
             gap: 1rem;
-            margin-bottom: 0.5rem;
           }
-          .ready-toggle {
-            padding: 0.25rem 0.5rem;
-            border: none;
-            border-radius: 4px;
-            cursor: pointer;
+          .user-name {
+            font-weight: 600;
+            font-size: 1.1rem;
+            min-width: 140px;
+            position: relative;
+            cursor: help;
+            color: #2c3e50;
+          }
+          .user-name:hover::after {
+            content: attr(data-email);
+            position: absolute;
+            top: 100%;
+            left: 0;
+            background: #2c3e50;
+            color: white;
+            padding: 0.6rem 1rem;
+            border-radius: 6px;
             font-size: 0.875rem;
-          }
-          .ready-toggle.ready {
-            background-color: var(--christmas-green);
-            color: white;
-          }
-          .ready-toggle.not-ready {
-            background-color: var(--christmas-red);
-            color: white;
+            white-space: nowrap;
+            z-index: 1000;
+            font-weight: normal;
+            box-shadow: 0 4px 12px rgba(0,0,0,0.15);
           }
           .user-actions {
             display: flex;
-            gap: 0.5rem;
+            gap: 1rem;
+            align-items: center;
+          }
+          .ready-toggle {
+            padding: 0.5rem 1rem;
+            border: none;
+            border-radius: 6px;
+            cursor: pointer;
+            font-size: 0.9rem;
+            font-weight: 500;
+            transition: all 0.2s;
+            min-width: 100px;
+            text-align: center;
+          }
+          .ready-toggle:hover {
+            transform: translateY(-1px);
+            box-shadow: 0 4px 12px rgba(0,0,0,0.1);
+          }
+          .ready-toggle.ready {
+            background-color: #2ecc71;
+            color: white;
+          }
+          .ready-toggle.not-ready {
+            background-color: #e74c3c;
+            color: white;
+          }
+          .family-group-select {
+            padding: 0.5rem 1rem;
+            border: 2px solid #ddd;
+            border-radius: 6px;
+            font-size: 0.9rem;
+            font-weight: 500;
+            cursor: pointer;
+            min-width: 130px;
+            appearance: none;
+            background-image: url("data:image/svg+xml;charset=UTF-8,%3csvg xmlns='http://www.w3.org/2000/svg' viewBox='0 0 24 24' fill='none' stroke='currentColor' stroke-width='2' stroke-linecap='round' stroke-linejoin='round'%3e%3cpolyline points='6 9 12 15 18 9'%3e%3c/polyline%3e%3c/svg%3e");
+            background-repeat: no-repeat;
+            background-position: right 0.7rem center;
+            background-size: 1em;
+            padding-right: 2.5rem;
+            transition: all 0.2s ease;
+          }
+          .family-group-select:focus {
+            outline: none;
+            border-color: #3498db;
+            box-shadow: 0 0 0 3px rgba(52,152,219,0.2);
           }
           .delete-btn {
-            background-color: var(--christmas-red);
-            color: white;
-            border: none;
-            border-radius: 4px;
-            padding: 0.25rem 0.5rem;
+            background-color: #fff;
+            color: #e74c3c;
+            border: 2px solid #e74c3c;
+            border-radius: 6px;
+            padding: 0.5rem 1rem;
             cursor: pointer;
+            transition: all 0.2s;
+            font-weight: 500;
+            font-size: 0.9rem;
+          }
+          .delete-btn:hover {
+            background-color: #e74c3c;
+            color: white;
+            transform: translateY(-1px);
+            box-shadow: 0 4px 12px rgba(231,76,60,0.2);
+          }
+          .match-info {
+            font-size: 0.95rem;
+            color: #666;
+            display: flex;
+            align-items: center;
+            gap: 0.5rem;
+            min-width: 200px;
+          }
+          .match-info.matched {
+            color: #27ae60;
+            font-weight: 500;
+          }
+          .match-info.not-matched {
+            color: #7f8c8d;
+          }
+          .match-arrow {
+            color: #3498db;
+            font-weight: bold;
+            font-size: 1.2rem;
+          }
+          .family-1 {
+            background: linear-gradient(45deg, #ff6b6b10, #ffffff);
+            border-left: 4px solid #ff6b6b;
+          }
+          .family-2 {
+            background: linear-gradient(45deg, #4ecdc410, #ffffff);
+            border-left: 4px solid #4ecdc4;
           }
           .stats {
-            margin-bottom: 1rem;
-            padding: 0.5rem;
-            background-color: #f5f5f5;
-            border-radius: 4px;
+            background: white;
+            padding: 1.5rem;
+            border-radius: 12px;
+            box-shadow: 0 2px 8px rgba(0,0,0,0.05);
+            margin-bottom: 2rem;
+            display: grid;
+            grid-template-columns: repeat(3, 1fr);
+            gap: 1rem;
+          }
+          .stat-item {
+            text-align: center;
+          }
+          .stat-value {
+            font-size: 1.5rem;
+            font-weight: bold;
+            color: #2c3e50;
+            margin-bottom: 0.3rem;
+          }
+          .stat-label {
+            color: #7f8c8d;
+            font-size: 0.9rem;
           }
         </style>
       </head>
@@ -189,9 +311,18 @@ app.get('/admin', adminMiddleware, async (c) => {
             <section>
               <h2>Participants</h2>
               <div class="stats">
-                <p>Total Participants: ${stats.total}</p>
-                <p>Ready: ${stats.ready}</p>
-                <p>Not Ready: ${stats.notReady}</p>
+                <div class="stat-item">
+                  <div class="stat-value">${stats.total}</div>
+                  <div class="stat-label">Total Participants</div>
+                </div>
+                <div class="stat-item">
+                  <div class="stat-value">${stats.ready}</div>
+                  <div class="stat-label">Ready</div>
+                </div>
+                <div class="stat-item">
+                  <div class="stat-value">${stats.notReady}</div>
+                  <div class="stat-label">Not Ready</div>
+                </div>
               </div>
               <form method="POST" action="/admin/send-invites" style="margin-bottom: 1rem;">
                 <button type="submit" class="btn btn-primary">
@@ -199,10 +330,10 @@ app.get('/admin', adminMiddleware, async (c) => {
                 </button>
               </form>
               ${users.map(user => `
-                <div class="user-row">
-                  <span>${user.username}</span>
-                  <span>(${user.email})</span>
-                  <span class="user-password">${user.clearPassword || 'N/A'}</span>
+                <div class="user-row family-${user.familyGroup || '0'}">
+                  <div class="user-info">
+                    <span class="user-name" data-email="${user.email}">${user.username}</span>
+                  </div>
                   <div class="user-actions">
                     <form method="POST" action="/admin/toggle-ready/${user.id}" style="margin: 0;">
                       <button type="submit" 
@@ -211,6 +342,20 @@ app.get('/admin', adminMiddleware, async (c) => {
                         ${user.ready ? '✓ Ready' : '✗ Not Ready'}
                       </button>
                     </form>
+                    <form method="POST" action="/admin/users/${user.id}/family-group" style="margin: 0;">
+                      <select name="familyGroup" 
+                              onchange="this.form.submit()" 
+                              class="family-group-select"
+                              style="background-color: ${user.familyGroup ? `var(--christmas-${user.familyGroup === 1 ? 'red' : 'green'})` : '#f8f9fa'}; 
+                                     color: ${user.familyGroup ? 'white' : '#333'};">
+                        <option value="0">No Family</option>
+                        <option value="1" ${user.familyGroup === 1 ? 'selected' : ''}>Family 1</option>
+                        <option value="2" ${user.familyGroup === 2 ? 'selected' : ''}>Family 2</option>
+                        <option value="3" ${user.familyGroup === 3 ? 'selected' : ''}>Family 3</option>
+                        <option value="4" ${user.familyGroup === 4 ? 'selected' : ''}>Family 4</option>
+                        <option value="5" ${user.familyGroup === 5 ? 'selected' : ''}>Family 5</option>
+                      </select>
+                    </form>
                     <form method="POST" action="/admin/users/${user.id}/delete" style="margin: 0;">
                       <button type="submit" class="delete-btn" 
                               onclick="return confirm('Are you sure you want to delete this user?')">
@@ -218,10 +363,11 @@ app.get('/admin', adminMiddleware, async (c) => {
                       </button>
                     </form>
                   </div>
-                  ${user.matchedWith ? 
-                    `<span>→ Matched with: ${allUsers.find(u => u.id === user.matchedWith)?.username || 'Unknown'}</span>` 
-                    : '<span>Not matched</span>'
-                  }
+                  <div class="match-info ${user.matchedWith ? 'matched' : 'not-matched'}">
+                    ${user.matchedWith ? 
+                      `<span class="match-arrow">→</span> Matched with: ${allUsers.find(u => u.id === user.matchedWith)?.username || 'Unknown'}` 
+                      : 'Not matched'}
+                  </div>
                 </div>
               `).join('')}
 
@@ -673,3 +819,29 @@ app.post('/admin/send-invites', adminMiddleware, async (c) => {
   
   return c.redirect('/admin');
 });
+
+// Add this new route for updating family group
+app.post('/admin/users/:id/family-group', adminMiddleware, async (c) => {
+  try {
+    const userId = parseInt(c.req.param('id'))
+    const { familyGroup } = await c.req.parseBody()
+    const userManager = c.get('userManager')
+    
+    await userManager.updateUser(userId, {
+      familyGroup: parseInt(familyGroup)
+    })
+    
+    flash.set(c, {
+      type: 'success',
+      text: 'Family group updated successfully'
+    })
+  } catch (error) {
+    console.error('Family group update error:', error)
+    flash.set(c, {
+      type: 'error',
+      text: 'Failed to update family group'
+    })
+  }
+  
+  return c.redirect('/admin')
+})
